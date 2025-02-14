@@ -27,7 +27,7 @@ public class AiService {
     public String getAiSummary(String prompt) {
         try {
             ChatCompletionRequest request = new ChatCompletionRequest();
-            request.setModel("gpt-4o");
+            request.setModel("gpt-3"); // gpt-4o is not compatible with Swagger
             request.setTemperature(0.7);
 
             ChatCompletionRequest.Message userMessage =
