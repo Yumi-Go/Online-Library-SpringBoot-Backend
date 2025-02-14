@@ -113,3 +113,9 @@ Notable files:
 - Configured via `openai.api.key` and `openai.api.url` in `application.properties`.
 - If you want to use **real** GPT engine, set the correct model name and an actual API key.
 - If you prefer a **mock** or offline mode, you can comment out or replace the `webClient.post()` code in `AiService`.
+
+
+
+### Viewing the OpenAPI Docs via /v3/api-docs
+When Springdoc is installed and configured correctly, an OpenAPI specification is automatically generated at:
+ **http://localhost:8080/v3/api-docs**
